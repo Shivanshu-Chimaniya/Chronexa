@@ -24,7 +24,7 @@ export default function AllCapsules() {
 				allCapsules.push({data, id});
 			});
 
-			setCapsules([]);
+			setCapsules(allCapsules);
 			setIsLoading(false);
 		};
 		getCapsules();
