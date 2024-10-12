@@ -1,0 +1,14 @@
+.capsule-container{
+    margin: 0 auto;
+    max-width: 1024px;
+    
+}
+
+.allcapsules{
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+
+}

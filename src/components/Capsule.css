@@ -1,0 +1,14 @@
+.gif-overlay{
+    width: 151px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0.5;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

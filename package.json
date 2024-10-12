@@ -1,0 +1,45 @@
+{
+  "name": "chronexa",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.1.0",
+    "@mui/icons-material": "^6.1.1",
+    "@mui/material": "^6.1.1",
+    "@mui/styled-engine-sc": "^6.1.1",
+    "@mui/x-date-pickers": "^7.19.0",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.14.0",
+    "jodit-react": "^4.1.2",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sort-by": "^0.0.2",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.2.0",
+    "react-router-dom": "^6.26.2",
+    "vite": "^5.2.0"
+  }
+}

@@ -1,0 +1,14 @@
+* {
+     user-select: none;
+     scrollbar-width: none; 
+}
+.mobile-spacer{
+     display: none;
+}  
+@media (max-width: 768px) { 
+     .mobile-spacer{
+          height: 5rem;
+          display: block;
+     }   
+}
+ 

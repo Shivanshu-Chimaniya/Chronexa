@@ -1,0 +1,126 @@
+.time-capsule {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .time-capsule h1 {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  .time-capsule form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .time-capsule label {
+	margin-bottom: 10px;
+  }
+  
+  .time-capsule input {
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  .time-capsule .jodit-container {
+	height: 400px;
+	margin-bottom: 20px;
+  }
+  
+  .time-capsule button {
+	padding: 10px;
+	border: none;
+	background-color: transparent;
+	color: inherit;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .time-capsule button:hover {
+	background-color: #e0e0e0;
+  }
+ 
+  
+
+  .file-input-container{
+	border: 1px solid #b4b4b4;
+	border-radius: 0.25rem;
+	height: 56px;
+	padding: auto 0;
+	display: flex;
+	align-items: center;
+  }
+  .file-input{
+	margin-left: 12px;
+	flex-grow: 1;
+  }
+  .file-input-label{
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+	padding-bottom: 0.25rem;
+  }
+.input-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.left-inputs{
+	min-width: 300px;
+}
+
+.right-image-preview{
+	display: flex;
+	align-items: center;
+	justify-self: center;
+}	
+.preview-cover-pic{
+	width: 100%;
+}
+  .right-image-preview{
+	height: 240px;
+	width: 240px;
+	border: 1px solid #b4b4b4;
+	text-align: center;
+	color: #e0e0e0;
+	border-radius: 0.25rem;
+  } 
+  @media (max-width: 600px) {
+	.time-capsule {
+	  padding: 10px;
+	}
+  
+	.time-capsule h1 {
+	  font-size: 1.5rem;
+	}
+  
+	.time-capsule .jodit-container {
+	  height: 200px;
+	}
+  
+	.time-capsule button {
+	  padding: 8px;
+	}
+	.input-container{
+		flex-direction: column;
+	
+	} 
+	.right-image-preview{
+		height: min(240px, 100%);
+		aspect-ratio: 1/1;
+	  } 
+	  .left-inputs{
+		width: min(300px, 100%);
+	}
+
+  }

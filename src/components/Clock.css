@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(../fonts/DS-DIGI.TTF) format('woff2');
+    src: url(../fonts/DS-DIGIB.TTF) format('woff2');
+}
+
+ 
+.clock-container {
+    padding: 3rem 0;
+    background-color: #f3eae5;
+    color:#000;
+    margin: auto;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* animation: neon 5s linear infinite; */
+    font-family: Digital;
+    border-radius: 1rem;
+    width: calc(100% - 2rem);
+}
+
+.clock-container .hourContainer {
+    display: flex;
+    justify-self: center;
+    font-family: Digital;
+    font-size: 5rem;
+}
+.clock-container .hourContainer .hours,
+    .clock-container .minutes,
+    .clock-container .seconds,
+    .clock-container .session {
+        width: 6rem;
+    }
+
+
+.clock-container .year {
+    color:#000;
+    margin-top: 1rem;
+    font-family: Digital;
+    /* animation: neon 20s linear infinite; */
+    font-size: 2rem;
+
+}
+
+@keyframes neon {
+    0% {
+        text-shadow:0 0 6px rgba(202, 228, 225, 0.92),
+        0 0 20px rgba(202, 228, 225, 0.34),
+        0 0 12px rgba(30, 132, 242, 0.52),
+        0 0 21px rgba(30, 132, 242, 0.92),
+        0 0 24px rgba(30, 132, 242, 0.78),
+        0 0 44px rgba(30, 132, 242, 0.92);
+    }
+
+    50% {
+        text-shadow:
+        0 0 6px rgba(202, 228, 225, 0.98),
+        0 0 20px rgba(202, 228, 225, 0.42),
+        0 0 12px rgba(30, 132, 242, 0.58),
+        0 0 22px rgba(30, 132, 242, 0.84),
+        0 0 28px rgba(30, 132, 242, 0.88),
+        0 0 60px rgba(30, 132, 242, 1);
+    }
+    100% {
+        text-shadow:0 0 6px rgba(202, 228, 225, 0.92),
+        0 0 20px rgba(202, 228, 225, 0.34),
+        0 0 12px rgba(30, 132, 242, 0.52),
+        0 0 21px rgba(30, 132, 242, 0.92),
+        0 0 24px rgba(30, 132, 242, 0.78),
+        0 0 44px rgba(30, 132, 242, 0.92);
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .clock-container .hourContainer {
+        width: 20rem;
+    }
+
+    .clock-container .hourContainer .hours,
+    .clock-container .minutes,
+    .clock-container .seconds,
+    .clock-container .session {
+        width: 5.5rem;
+
+        font-size: 4rem;
+
+    }
+
+    .clock-container .year {
+        font-size: 1.5rem;
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .clock-container 
+    {
+        width: 100%;
+    }
+    .clock-container .hourContainer {
+
+        width: 14rem;
+    }
+
+    .clock-container .hourContainer .hours,
+    .clock-container .minutes,
+    .clock-container .seconds,
+    .clock-container .session {
+        font-size: 2.5rem;
+    }
+
+    .clock-container .year {
+        font-size: 1rem;
+    }
+}
